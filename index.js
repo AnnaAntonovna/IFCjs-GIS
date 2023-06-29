@@ -50,7 +50,7 @@ const customLayer = {
 
   onAdd: function () {
     const ifcLoader = new IFCLoader();
-    ifcLoader.ifcManager.setWasmPath( '../../../' );
+    ifcLoader.ifcManager.setWasmPath( '"./"' );
     ifcLoader.load( './01.ifc', function ( model ) {
       scene.add( model );
     });
